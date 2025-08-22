@@ -1,18 +1,20 @@
+import Foodfiltbtn from "./foodfiltbtn"
 
 
+function Catefiltr({category}) {
 
-function Catefiltr() {
+    let b = category[2]
+    console.log (b)
 
 
     return <>
-        <div style={{ height: '50px', margin: '200px', padding: '10px', display: 'flex',gap:'50px', alignItems: 'center' }}>
+        <div style={{display: 'flex',flexWrap:'wrap',width:'75%',justifyContent:'center', margin: 'auto',marginTop:'50px', padding: '10px',gap:'30px', alignItems: 'center' }}>
 
-            
-                <div style={{ border: 'none', borderRadius: '60px', backgroundColor: 'red', width: '120px', padding: '10px' }}><img style={{ width: '100px', borderRadius: '50px' }} src="https://static.vecteezy.com/system/resources/previews/026/733/557/large_2x/foodgraphy-of-raw-food-on-plate-isolated-on-white-background-generative-ai-photo.jpg" /></div>
-                <div style={{ border: 'none', borderRadius: '60px', backgroundColor: 'red', width: '120px', padding: '10px' }}><img style={{ width: '100px', borderRadius: '50px' }} src="https://static.vecteezy.com/system/resources/previews/026/733/557/large_2x/foodgraphy-of-raw-food-on-plate-isolated-on-white-background-generative-ai-photo.jpg" /></div>
-                <div style={{ border: 'none', borderRadius: '60px', backgroundColor: 'red', width: '120px', padding: '10px' }}><img style={{ width: '100px', borderRadius: '50px' }} src="https://static.vecteezy.com/system/resources/previews/026/733/557/large_2x/foodgraphy-of-raw-food-on-plate-isolated-on-white-background-generative-ai-photo.jpg" /></div>
-                <div style={{ border: 'none', borderRadius: '60px', backgroundColor: 'red', width: '120px', padding: '10px' }}><img style={{ width: '100px', borderRadius: '50px' }} src="https://static.vecteezy.com/system/resources/previews/026/733/557/large_2x/foodgraphy-of-raw-food-on-plate-isolated-on-white-background-generative-ai-photo.jpg" /></div>
-            
+                {
+                    category.map((ct)=>{
+                        return <Foodfiltbtn category ={ct}/>
+                    })
+                }
 
         </div>
 
