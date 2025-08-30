@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Card from 'react-bootstrap/Card';
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 const categories = [
 
@@ -61,7 +62,9 @@ export default function HeroComp() {
           </div>
           <div style={{width:'100%', display: 'flex', gap: '20px', justifyContent: 'center' }}>
             <div>
-              <img onMouseEnter={()=>{setIshovereddeli(true)}} onMouseLeave={()=>{setIshovereddeli(false)}} style={{width:'100%',transition: "transform 0.3s ease",transform: ishovereddeli ? "scale(1.2)":"scale(1)"}} src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png" alt="" />
+              <Link to ="/Menue">
+              <img  onMouseEnter={()=>{setIshovereddeli(true)}} onMouseLeave={()=>{setIshovereddeli(false)}} style={{width:'100%',transition: "transform 0.3s ease",transform: ishovereddeli ? "scale(1.2)":"scale(1)"}} src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/faa6d07d-e43c-4aa1-90d8-eda6c14e467d_Food2BU.png" alt="" />
+              </Link>
             </div>
             <div>
               <img onMouseEnter={()=>{setIshovereddine(true)}} onMouseLeave={()=>{setIshovereddine(false)}} style={{width:'100%',transition: "transform 0.3s ease",transform: ishovereddine ? "scale(1.2)":"scale(1)"}} src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/8fa21ee7-affd-43a4-b14d-978c9b372159_DO2BU.png" alt="" />
@@ -73,7 +76,8 @@ export default function HeroComp() {
         </div>
         <img style={{ width: '16%' }} src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/portal/testing/seo-home/Sushi_replace.png" alt="" />
       </div>
-      <div style={{backgroundColor:'#FF6F61',height:'80px'}}></div>
+      <div style={{backgroundColor:'#FF6F61',height:'80px'}}></div><br /><br />
+      
 
 
 

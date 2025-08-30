@@ -9,6 +9,7 @@ import { data } from 'react-router-dom';
 
 
 
+
 function App() {
 
   const [query, setQuery] = useState("");
@@ -41,8 +42,15 @@ function App() {
     <>
       <Navbarland />
       <HeroComp/>
-      <Catefiltr category ={category}/>
-      <FavorateFoodlist food={items}/>
+      <Catefiltr category ={category} />
+      <div style={{backgroundColor:'#FF6F61', padding:'50px'}}>
+
+        <h3>Discover best and most buyed meals and snacks</h3><br />
+
+        <FavorateFoodlist food={items}/>
+
+      </div>
+      
 
     </>
   )

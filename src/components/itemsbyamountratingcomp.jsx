@@ -11,7 +11,7 @@ console.log(food)
 console.log({ag})
 
     return(
-        <><div style={{display:'flex',gap:'5px'}}>
+        <><div style={{display:'flex',flexWrap: 'wrap',gap:'5px'}}>
 
             {
             food.map((pd)=>{return<ItemCard item ={pd}/>;
